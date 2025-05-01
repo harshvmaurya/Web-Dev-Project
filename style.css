@@ -1,0 +1,79 @@
+*,*::before,*::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+font-family: "Lexend Giga", serif;
+           
+      
+}
+.wrapper{
+      width: 100vw;
+      height: 100vh;
+      background-image:url('background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: grid;
+      place-items: center;
+
+}
+.gameinfo{
+      color: rgb(255, 255, 255);
+      top: 3rem;
+      left: 50%;
+      font-weight: 900;
+      background-color:#FFDD33;
+     margin-bottom: 3rem;
+     padding: 3rem;
+      border-radius: 1rem;
+      padding: 0.5rem 3rem;
+      text-align: center;
+      border: 1px  solid rgb(40,40,40,0.15);
+      
+      position: absolute;
+      transform: translateX(-50%);
+}
+.tic-tac-toe{
+      display: grid;
+      width: 90%;
+        border-radius: 1rem;
+      max-width: 20rem;
+      padding: 2rem;
+      background-color: rgb(23, 202, 234); 
+       border: 1rem  solid rgb(3, 126, 187);
+       grid-template-columns: repeat(3,1fr);
+       aspect-ratio: 1/1;
+}
+.box{
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1/1;
+      cursor: pointer;
+      font-size: 3rem;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.box1,.box2,.box4,.box7,.box5,.box8{
+      border-right: 2px solid white;
+}
+.box1,.box2,.box3,.box4,.box5,.box6{
+      border-bottom: 2px solid white;
+}
+.btn{
+      background-color: rgba(237,29,36);
+      border: 1px solid rgb(40, 40, 40, 0.5);
+      color: white;
+      position: absolute;
+      bottom: 3rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      /* display: none; */
+}
+.btn.active{
+      display: flex;
+}
+.win{
+      background-color: greenyellow;
+}
