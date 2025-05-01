@@ -1,2 +1,1 @@
-# Web-Dev-Project
-My web development projects.
+Tic Tac Toe game made using Javascript.
